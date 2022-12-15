@@ -23,7 +23,10 @@
 
     <link rel="icon" type="image/png" href="/access/images/logo.png" />
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="/access/css/style.css">
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
@@ -34,10 +37,10 @@
                 <div class="mb-4">
                     <img src="/access/images/logo.png" class="w-24 rounded-full">
                 </div>
-                <h1 class="text-4xl sm:text-6xl text-blue-400 font-bold drop-shadow-md">
+                <h1 class="text-4xl sm:text-6xl text-blue-400 font-bold drop-shadow-md" data-aos="fade-right">
                     Kurama
                 </h1>
-                <p class="text-xl text-white">
+                <p class="text-xl text-white" data-aos="fade-right" data-aos-delay="100">
                     <span class="font-bold">
                         Error:
                     </span>
@@ -50,7 +53,7 @@
     <div class="mb-[18vh]"></div>
 
     <!-- About Me -->
-    <div class="p-12 text-white container mx-auto">
+    <div class="p-12 text-white container mx-auto" data-aos="fade-up" data-aos-delay="100" data-aos-duration="500">
         <div class="mb-4">
             <h1 class="text-3xl font-bold">
                 <span class="text-blue-400">
@@ -83,7 +86,7 @@
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8">
 
-            <div class="relative bg-orange-400 text-white mt-4 p-4 pt-14 rounded-xl shadow-lg">
+            <div class="relative bg-orange-400 text-white mt-4 p-4 pt-14 rounded-xl shadow-lg" data-aos="fade-up">
                 <img src="/access/images/logo.png" class="absolute w-16 -top-4 left-4 rounded-md shadow-md" />
                 <a class="absolute top-3 left-24 text-xl drop-shadow-md font-bold transition hover:scale-105" href="#" target="_blank">
                     Kurama
@@ -114,7 +117,7 @@
                 </h1>
             </div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8" data-aos="fade-up">
 
                 <div class="relative p-4 pb-16 rounded-lg bg-blue-400 shadow-lg">
                     <p class="text-xs text-white">
@@ -141,4 +144,7 @@
         </div>
     </div>
 </body>
+<script>
+    AOS.init();
+</script>
 </html>
